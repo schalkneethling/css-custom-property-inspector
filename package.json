@@ -1,0 +1,86 @@
+{
+  "name": "css-custom-property-inspector",
+  "displayName": "CSS Custom Property Inspector",
+  "description": "Shows CSS custom property values, definitions, and resolved references on hover",
+  "version": "0.1.0",
+  "publisher": "schalkneethling",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "css",
+    "custom properties",
+    "css variables",
+    "hover",
+    "scss",
+    "less"
+  ],
+  "activationEvents": [
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:less",
+    "onLanguage:html"
+  ],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "CSS Custom Property Inspector",
+      "properties": {
+        "cssCustomPropertyInspector.showResolvedValue": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the fully resolved value after following var() references"
+        },
+        "cssCustomPropertyInspector.resolutionDepth": {
+          "type": "number",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 20,
+          "description": "Maximum depth for recursive var() resolution"
+        },
+        "cssCustomPropertyInspector.excludePatterns": {
+          "type": "string",
+          "default": "**/node_modules/**",
+          "description": "Glob pattern for files/folders to exclude from scanning"
+        },
+        "cssCustomPropertyInspector.includeFileTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "css",
+            "scss",
+            "less"
+          ],
+          "description": "File extensions to scan for custom property definitions"
+        },
+        "cssCustomPropertyInspector.showFileLinks": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show clickable links to the definition files in the hover"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "@vscode/test-electron": "^2.3.0",
+    "mocha": "^10.0.0"
+  }
+}
