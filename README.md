@@ -28,13 +28,13 @@ When you hover over a custom property reference, the extension looks it up in th
 
 ## Extension settings
 
-| Setting | Type | Default | Description |
-|---|---|---|---|
-| `cssCustomPropertyInspector.showResolvedValue` | boolean | `true` | Show the fully resolved value after following `var()` references |
-| `cssCustomPropertyInspector.resolutionDepth` | number | `10` | Maximum depth for recursive `var()` resolution |
-| `cssCustomPropertyInspector.excludePatterns` | string | `**/node_modules/**` | Glob pattern for files/folders to exclude from scanning |
-| `cssCustomPropertyInspector.includeFileTypes` | string[] | `["css", "scss", "less"]` | File extensions to scan for custom property definitions |
-| `cssCustomPropertyInspector.showFileLinks` | boolean | `true` | Show clickable links to the definition files in the hover |
+| Setting                                        | Type     | Default                   | Description                                                      |
+| ---------------------------------------------- | -------- | ------------------------- | ---------------------------------------------------------------- |
+| `cssCustomPropertyInspector.showResolvedValue` | boolean  | `true`                    | Show the fully resolved value after following `var()` references |
+| `cssCustomPropertyInspector.resolutionDepth`   | number   | `10`                      | Maximum depth for recursive `var()` resolution                   |
+| `cssCustomPropertyInspector.excludePatterns`   | string   | `**/node_modules/**`      | Glob pattern for files/folders to exclude from scanning          |
+| `cssCustomPropertyInspector.includeFileTypes`  | string[] | `["css", "scss", "less"]` | File extensions to scan for custom property definitions          |
+| `cssCustomPropertyInspector.showFileLinks`     | boolean  | `true`                    | Show clickable links to the definition files in the hover        |
 
 ## Development
 
