@@ -1,5 +1,7 @@
 # CSS Custom Property Inspector
 
+![A grabby crab in hues of purple and blue](images/css-cpi.png)
+
 A VS Code extension that shows CSS custom property values, definitions, and resolved references on hover. Works with CSS, SCSS, Less, and HTML files.
 
 Compatible with VS Code, VS Codium, Cursor, and Windsurf.

@@ -2,8 +2,13 @@
   "name": "css-custom-property-inspector",
   "displayName": "CSS Custom Property Inspector",
   "description": "Shows CSS custom property values, definitions, and resolved references on hover",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "schalkneethling",
+  "icon": "images/css-cpi.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schalkneethling/css-custom-property-inspector.git"
+  },
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
