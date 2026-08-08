@@ -1,8 +1,8 @@
 {
   "name": "css-custom-property-inspector",
   "displayName": "CSS Custom Property Inspector",
-  "description": "Shows CSS custom property values, definitions, and resolved references on hover",
-  "version": "0.1.1",
+  "description": "Deprecated — this extension is retired and no longer maintained",
+  "version": "0.1.2",
   "publisher": "schalkneethling",
   "icon": "images/css-cpi.png",
   "repository": {

@@ -1,5 +1,10 @@
 # CSS Custom Property Inspector
 
+> [!WARNING]
+> **This project is retired and no longer maintained.** Version `0.1.2` is the final release. Existing installations may continue to work, but no further fixes, compatibility updates, or support will be provided. The GitHub repository is archived and retained for historical reference.
+
+For tooling focused on validating and adopting typed CSS custom properties declared with `@property`, see [CSS Property Type Validator](https://github.com/schalkneethling/css-property-type-validator).
+
 ![A grabby crab in hues of purple and blue](images/css-cpi.png)
 
 A VS Code extension that shows CSS custom property values, definitions, and resolved references on hover. Works with CSS, SCSS, Less, and HTML files.
